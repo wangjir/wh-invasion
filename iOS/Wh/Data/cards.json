@@ -1,0 +1,70 @@
+{
+    "cs_1": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_1.jpg",
+        "name": "Defender of the hold",
+        "unit_type": "Warrior",
+        "cost": 1,
+        "loyalty_need": [
+            "Dwarf": 1
+        ],
+        "loyalty_produce": [
+            "Dwarf": 1
+        ],
+        "power": 1,
+        "hp": 1,
+        "skills": [
+            {
+                "skill": "Battlefield only"
+            }
+        ]
+    },
+    "cs_2": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_2.jpg",
+        "name": "Zhufbar Engineers",
+        "unit_type": "Engineer",
+        "cost": 3,
+        "loyalty_need": [
+            "Dwarf": 1
+        ],
+        "loyalty_produce": [
+            "Dwarf": 1
+        ],
+        "power": 1,
+        "hp": 3,
+        "skills": [
+            {
+                "skill": "When leave play, opponent sacrifice one unit",
+                "description": "After this unit leaves play, each opponent must sacrifice a unit in this corresponding zone."
+            }
+        ]
+    },
+    "cs_3": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_3.jpg",
+        "name": "Hammerer of Karak Azul",
+        "unit_type": ["Warrior", "Elite"],
+        "cost": 2,
+        "loyalty_need": [
+            "Dwarf": 1
+        ],
+        "loyalty_produce": [
+            "Dwarf": 1
+        ],
+        "power": 1,
+        "hp": 2,
+        "skills": [
+            {
+                "skill": "Toughness 1",
+                "description": "Whenever this unit is assigned damage, cancel 1 of that damage."
+            }
+        ]
+    },
+}
