@@ -30,6 +30,24 @@ enum RACE {
     static func all() -> [RACE] {
         return [CHAOS, DARKELF, DWARF, EMPIRE, HIGHELF, ORC]
     }
+    static func stringToRace(name : String) -> RACE {
+        switch name {
+        case "Chaos":
+            return CHAOS
+        case "Dark Elf":
+            return DARKELF
+        case "Dwarf":
+            return DWARF
+        case "Empire":
+            return EMPIRE
+        case "High Elf":
+            return HIGHELF
+        case "Orc":
+            return ORC
+        default:
+            return EMPIRE
+        }
+    }
 }
 
 enum CARD_TYPE {
@@ -50,6 +68,22 @@ enum CARD_TYPE {
     }
     static func all() -> [CARD_TYPE] {
         return [LEGEND, UNIT, SUPPORT, TACTIC, QUEST]
+    }
+    static func stringToCardType(name : String) -> CARD_TYPE {
+        switch name {
+        case "Legend":
+            return LEGEND
+        case "Unit":
+            return UNIT
+        case "Support":
+            return SUPPORT
+        case "Tactic":
+            return TACTIC
+        case "Quest":
+            return QUEST
+        default:
+            return UNIT
+        }
     }
 }
 

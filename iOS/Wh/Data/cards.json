@@ -5,19 +5,20 @@
         "unique": 0,
         "image": "cs_1.jpg",
         "name": "Defender of the hold",
-        "unit_type": "Warrior",
+        "unit_type": ["Warrior"],
         "cost": 1,
-        "loyalty_need": [
+        "loyalty_need": {
             "Dwarf": 1
-        ],
-        "loyalty_produce": [
+        },
+        "loyalty_produce": {
             "Dwarf": 1
-        ],
+        },
         "power": 1,
         "hp": 1,
         "skills": [
             {
-                "skill": "Battlefield only"
+                "skill": "Battlefield only",
+                "description": "Battlefield only"
             }
         ]
     },
@@ -27,20 +28,20 @@
         "unique": 0,
         "image": "cs_2.jpg",
         "name": "Zhufbar Engineers",
-        "unit_type": "Engineer",
+        "unit_type": ["Engineer"],
         "cost": 3,
-        "loyalty_need": [
+        "loyalty_need": {
             "Dwarf": 1
-        ],
-        "loyalty_produce": [
+        },
+        "loyalty_produce": {
             "Dwarf": 1
-        ],
+        },
         "power": 1,
         "hp": 3,
         "skills": [
             {
                 "skill": "When leave play, opponent sacrifice one unit",
-                "description": "After this unit leaves play, each opponent must sacrifice a unit in this corresponding zone."
+                "description": "Forced: After this unit leaves play, each opponent must sacrifice a unit in this corresponding zone."
             }
         ]
     },
@@ -52,12 +53,12 @@
         "name": "Hammerer of Karak Azul",
         "unit_type": ["Warrior", "Elite"],
         "cost": 2,
-        "loyalty_need": [
+        "loyalty_need": {
             "Dwarf": 1
-        ],
-        "loyalty_produce": [
+        },
+        "loyalty_produce": {
             "Dwarf": 1
-        ],
+        },
         "power": 1,
         "hp": 2,
         "skills": [

@@ -34,21 +34,6 @@ enum TestEnum {
     }
 }
 
-enum TestEnum2 {
-    case CAR, BUS
-    func simpleDescription() -> String {
-        switch self {
-        case .CAR:
-            return "Car"
-        case .BUS:
-            return "BUS"
-        }
-    }
-    static func all() -> [TestEnum2] {
-        return [CAR, BUS]
-    }
-}
-
 
 class HomeTestData {
     var numberOfSides: Int = 2
@@ -66,17 +51,7 @@ class HomeTestData {
     }
     
     func simple() -> String {
-        /*
-        let x = [
-            TestNum(num: 3),
-            TestNum(num: 4),
-            TestNum(num: 2)
-        ]
-        let y = x.reduce(0) { $1.TriNum() + $0 }
-        */
-        let x = TestEnum.all()
-        
-        return "Hello:\(x) sides \(name). "
+        return "Hello: sides \(name). "
     }
 }
 
