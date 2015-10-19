@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF2ED64E1BD4D7830056F580 /* invasion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD181BD4D534009CA6F8 /* invasion.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		DF67BD3A1BD4D534009CA6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD151BD4D534009CA6F8 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD3C1BD4D534009CA6F8 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD1C1BD4D534009CA6F8 /* cards.json */; settings = {ASSET_TAGS = (); }; };
+		DF67BD3D1BD4D534009CA6F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD1D1BD4D534009CA6F8 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD3E1BD4D534009CA6F8 /* Battleground.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD1F1BD4D534009CA6F8 /* Battleground.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD3F1BD4D534009CA6F8 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD201BD4D534009CA6F8 /* Capital.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD401BD4D534009CA6F8 /* CapitalField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD211BD4D534009CA6F8 /* CapitalField.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD411BD4D534009CA6F8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD221BD4D534009CA6F8 /* Card.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD421BD4D534009CA6F8 /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD231BD4D534009CA6F8 /* CardManager.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD431BD4D534009CA6F8 /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD441BD4D534009CA6F8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD251BD4D534009CA6F8 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD451BD4D534009CA6F8 /* WhGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD261BD4D534009CA6F8 /* WhGame.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD461BD4D534009CA6F8 /* Battleground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */; settings = {ASSET_TAGS = (); }; };
+		DF67BD471BD4D534009CA6F8 /* BattlegroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD481BD4D534009CA6F8 /* CapitalDownsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */; settings = {ASSET_TAGS = (); }; };
+		DF67BD491BD4D534009CA6F8 /* CapitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4A1BD4D534009CA6F8 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD2E1BD4D534009CA6F8 /* CardView.xib */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4B1BD4D534009CA6F8 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4C1BD4D534009CA6F8 /* HomeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4D1BD4D534009CA6F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4E1BD4D534009CA6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD321BD4D534009CA6F8 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		DF67BD4F1BD4D534009CA6F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD331BD4D534009CA6F8 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		DF67BD501BD4D534009CA6F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD351BD4D534009CA6F8 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		DF67BD511BD4D534009CA6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD371BD4D534009CA6F8 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		DF67BD521BD4D534009CA6F8 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD391BD4D534009CA6F8 /* Array.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF67BD151BD4D534009CA6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF67BD191BD4D534009CA6F8 /* invasion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = invasion.xcdatamodel; sourceTree = "<group>"; };
+		DF67BD1C1BD4D534009CA6F8 /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		DF67BD1D1BD4D534009CA6F8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF67BD1F1BD4D534009CA6F8 /* Battleground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battleground.swift; sourceTree = "<group>"; };
+		DF67BD201BD4D534009CA6F8 /* Capital.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		DF67BD211BD4D534009CA6F8 /* CapitalField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapitalField.swift; sourceTree = "<group>"; };
+		DF67BD221BD4D534009CA6F8 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		DF67BD231BD4D534009CA6F8 /* CardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
+		DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemplate.swift; sourceTree = "<group>"; };
+		DF67BD251BD4D534009CA6F8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		DF67BD261BD4D534009CA6F8 /* WhGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhGame.swift; sourceTree = "<group>"; };
+		DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Battleground.storyboard; sourceTree = "<group>"; };
+		DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattlegroundViewController.swift; sourceTree = "<group>"; };
+		DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapitalDownsideView.xib; sourceTree = "<group>"; };
+		DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapitalView.swift; sourceTree = "<group>"; };
+		DF67BD2E1BD4D534009CA6F8 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTestData.swift; sourceTree = "<group>"; };
+		DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DF67BD321BD4D534009CA6F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DF67BD331BD4D534009CA6F8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF67BD351BD4D534009CA6F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF67BD371BD4D534009CA6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF67BD391BD4D534009CA6F8 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF924DF91BCB5F2400A252BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF67BD141BD4D534009CA6F8 /* invasion */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD151BD4D534009CA6F8 /* AppDelegate.swift */,
+				DF67BD161BD4D534009CA6F8 /* CoreDataModels */,
+				DF67BD1B1BD4D534009CA6F8 /* Data */,
+				DF67BD1E1BD4D534009CA6F8 /* DataModels */,
+				DF67BD271BD4D534009CA6F8 /* Game */,
+				DF67BD2D1BD4D534009CA6F8 /* Home */,
+				DF67BD331BD4D534009CA6F8 /* Info.plist */,
+				DF67BD341BD4D534009CA6F8 /* Launch */,
+				DF67BD361BD4D534009CA6F8 /* Resources */,
+				DF67BD381BD4D534009CA6F8 /* WhFoundation */,
+			);
+			path = invasion;
+			sourceTree = "<group>";
+		};
+		DF67BD161BD4D534009CA6F8 /* CoreDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD171BD4D534009CA6F8 /* CoreData */,
+				DF67BD1A1BD4D534009CA6F8 /* User */,
+			);
+			path = CoreDataModels;
+			sourceTree = "<group>";
+		};
+		DF67BD171BD4D534009CA6F8 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD181BD4D534009CA6F8 /* invasion.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		DF67BD1A1BD4D534009CA6F8 /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DF67BD1B1BD4D534009CA6F8 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD1C1BD4D534009CA6F8 /* cards.json */,
+				DF67BD1D1BD4D534009CA6F8 /* Constants.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DF67BD1E1BD4D534009CA6F8 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD1F1BD4D534009CA6F8 /* Battleground.swift */,
+				DF67BD201BD4D534009CA6F8 /* Capital.swift */,
+				DF67BD211BD4D534009CA6F8 /* CapitalField.swift */,
+				DF67BD221BD4D534009CA6F8 /* Card.swift */,
+				DF67BD231BD4D534009CA6F8 /* CardManager.swift */,
+				DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */,
+				DF67BD251BD4D534009CA6F8 /* Player.swift */,
+				DF67BD261BD4D534009CA6F8 /* WhGame.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		DF67BD271BD4D534009CA6F8 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */,
+				DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */,
+				DF67BD2A1BD4D534009CA6F8 /* Capital */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		DF67BD2A1BD4D534009CA6F8 /* Capital */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */,
+				DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */,
+			);
+			path = Capital;
+			sourceTree = "<group>";
+		};
+		DF67BD2D1BD4D534009CA6F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD2E1BD4D534009CA6F8 /* CardView.xib */,
+				DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */,
+				DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */,
+				DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */,
+				DF67BD321BD4D534009CA6F8 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DF67BD341BD4D534009CA6F8 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD351BD4D534009CA6F8 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		DF67BD361BD4D534009CA6F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD371BD4D534009CA6F8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF67BD381BD4D534009CA6F8 /* WhFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				DF67BD391BD4D534009CA6F8 /* Array.swift */,
+			);
+			path = WhFoundation;
+			sourceTree = "<group>";
+		};
+		DF924DF31BCB5F2300A252BD = {
+			isa = PBXGroup;
+			children = (
+				DF67BD141BD4D534009CA6F8 /* invasion */,
+				DF924DFD1BCB5F2400A252BD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF924DFD1BCB5F2400A252BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF924DFB1BCB5F2400A252BD /* Invasion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF924E111BCB5F2400A252BD /* Build configuration list for PBXNativeTarget "Invasion" */;
+			buildPhases = (
+				DF924DF81BCB5F2400A252BD /* Sources */,
+				DF924DF91BCB5F2400A252BD /* Frameworks */,
+				DF924DFA1BCB5F2400A252BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Invasion;
+			productName = wh;
+			productReference = DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF924DF41BCB5F2300A252BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Jirong Wang";
+				TargetAttributes = {
+					DF924DFB1BCB5F2400A252BD = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 95W26759N2;
+					};
+				};
+			};
+			buildConfigurationList = DF924DF71BCB5F2300A252BD /* Build configuration list for PBXProject "invasion" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF924DF31BCB5F2300A252BD;
+			productRefGroup = DF924DFD1BCB5F2400A252BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF924DFB1BCB5F2400A252BD /* Invasion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF924DFA1BCB5F2400A252BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF67BD3C1BD4D534009CA6F8 /* cards.json in Resources */,
+				DF67BD4E1BD4D534009CA6F8 /* Main.storyboard in Resources */,
+				DF67BD4F1BD4D534009CA6F8 /* Info.plist in Resources */,
+				DF67BD481BD4D534009CA6F8 /* CapitalDownsideView.xib in Resources */,
+				DF67BD501BD4D534009CA6F8 /* LaunchScreen.storyboard in Resources */,
+				DF67BD4A1BD4D534009CA6F8 /* CardView.xib in Resources */,
+				DF67BD511BD4D534009CA6F8 /* Assets.xcassets in Resources */,
+				DF67BD461BD4D534009CA6F8 /* Battleground.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF924DF81BCB5F2400A252BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF67BD431BD4D534009CA6F8 /* CardTemplate.swift in Sources */,
+				DF67BD3E1BD4D534009CA6F8 /* Battleground.swift in Sources */,
+				DF67BD421BD4D534009CA6F8 /* CardManager.swift in Sources */,
+				DF67BD521BD4D534009CA6F8 /* Array.swift in Sources */,
+				DF67BD451BD4D534009CA6F8 /* WhGame.swift in Sources */,
+				DF67BD4C1BD4D534009CA6F8 /* HomeTestData.swift in Sources */,
+				DF67BD411BD4D534009CA6F8 /* Card.swift in Sources */,
+				DF67BD3A1BD4D534009CA6F8 /* AppDelegate.swift in Sources */,
+				DF67BD401BD4D534009CA6F8 /* CapitalField.swift in Sources */,
+				DF67BD4B1BD4D534009CA6F8 /* CardViewController.swift in Sources */,
+				DF2ED64E1BD4D7830056F580 /* invasion.xcdatamodeld in Sources */,
+				DF67BD491BD4D534009CA6F8 /* CapitalView.swift in Sources */,
+				DF67BD4D1BD4D534009CA6F8 /* HomeViewController.swift in Sources */,
+				DF67BD3D1BD4D534009CA6F8 /* Constants.swift in Sources */,
+				DF67BD441BD4D534009CA6F8 /* Player.swift in Sources */,
+				DF67BD471BD4D534009CA6F8 /* BattlegroundViewController.swift in Sources */,
+				DF67BD3F1BD4D534009CA6F8 /* Capital.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF924E0F1BCB5F2400A252BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF924E101BCB5F2400A252BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF924E121BCB5F2400A252BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = invasion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jirong.invasion;
+				PRODUCT_NAME = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DF924E131BCB5F2400A252BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = invasion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jirong.invasion;
+				PRODUCT_NAME = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF924DF71BCB5F2300A252BD /* Build configuration list for PBXProject "invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF924E0F1BCB5F2400A252BD /* Debug */,
+				DF924E101BCB5F2400A252BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF924E111BCB5F2400A252BD /* Build configuration list for PBXNativeTarget "Invasion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF924E121BCB5F2400A252BD /* Debug */,
+				DF924E131BCB5F2400A252BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF67BD181BD4D534009CA6F8 /* invasion.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF67BD191BD4D534009CA6F8 /* invasion.xcdatamodel */,
+			);
+			currentVersion = DF67BD191BD4D534009CA6F8 /* invasion.xcdatamodel */;
+			path = invasion.xcdatamodeld;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF924DF41BCB5F2300A252BD /* Project object */;
+}

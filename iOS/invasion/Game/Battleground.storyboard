@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9bC-Vn-NNc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Battleground View Controller-->
+        <scene sceneID="2et-VE-cDx">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="9bC-Vn-NNc" customClass="BattlegroundViewController" customModule="Wh_temp_caseinsensitive_rename" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1ph-8i-23f"/>
+                        <viewControllerLayoutGuide type="bottom" id="2uq-D9-EsL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bBs-hK-w2G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgX-6K-dvG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f0h-Ps-Qb9">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="568"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="XMN-5G-X1c"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZZH-Vm-c0c">
+                                        <rect key="frame" x="40" y="0.0" width="280" height="568"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aME-8i-FYS" userLabel="Up View">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="284"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PJf-6n-NvZ" userLabel="Down View">
+                                                <rect key="frame" x="0.0" y="284" width="280" height="284"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2uq-D9-EsL" firstAttribute="top" secondItem="LgX-6K-dvG" secondAttribute="bottom" id="0lv-Kf-GFr"/>
+                            <constraint firstItem="LgX-6K-dvG" firstAttribute="leading" secondItem="bBs-hK-w2G" secondAttribute="leading" id="RXC-hc-UVc"/>
+                            <constraint firstAttribute="trailing" secondItem="LgX-6K-dvG" secondAttribute="trailing" id="YSD-KV-N5r"/>
+                            <constraint firstItem="LgX-6K-dvG" firstAttribute="top" secondItem="bBs-hK-w2G" secondAttribute="top" id="evb-zb-ZJY"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="92f-kv-7VJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="352" y="364"/>
+        </scene>
+    </scenes>
+</document>

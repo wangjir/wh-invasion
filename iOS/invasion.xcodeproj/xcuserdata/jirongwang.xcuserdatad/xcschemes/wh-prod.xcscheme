@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF924DFB1BCB5F2400A252BD"
-               BuildableName = "Wh.temp_caseinsensitive_rename.app"
-               BlueprintName = "Wh"
-               ReferencedContainer = "container:Wh.xcodeproj">
+               BuildableName = "invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+               BlueprintName = "Invasion"
+               ReferencedContainer = "container:invasion.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF924DFB1BCB5F2400A252BD"
-            BuildableName = "Wh.temp_caseinsensitive_rename.app"
-            BlueprintName = "Wh"
-            ReferencedContainer = "container:Wh.xcodeproj">
+            BuildableName = "invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "Invasion"
+            ReferencedContainer = "container:invasion.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF924DFB1BCB5F2400A252BD"
-            BuildableName = "Wh.temp_caseinsensitive_rename.app"
-            BlueprintName = "Wh"
-            ReferencedContainer = "container:Wh.xcodeproj">
+            BuildableName = "invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "Invasion"
+            ReferencedContainer = "container:invasion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF924DFB1BCB5F2400A252BD"
-            BuildableName = "Wh.temp_caseinsensitive_rename.app"
-            BlueprintName = "Wh"
-            ReferencedContainer = "container:Wh.xcodeproj">
+            BuildableName = "invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app"
+            BlueprintName = "Invasion"
+            ReferencedContainer = "container:invasion.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
