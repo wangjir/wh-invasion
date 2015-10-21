@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>wh-prod.xcscheme</key>
+		<key>invasion-prod.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>wh.xcscheme</key>
+		<key>invasion.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>

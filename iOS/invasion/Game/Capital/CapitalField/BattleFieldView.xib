@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BattleFieldView" customModule="invasion">
+            <connections>
+                <outlet property="cardLabel" destination="mO5-ed-FaI" id="NRI-TV-TMM"/>
+                <outlet property="cardStackList" destination="gt8-lB-rb4" id="QNj-RG-NPK"/>
+                <outlet property="hpLabel" destination="JDA-nS-jAP" id="vGI-tv-yHN"/>
+                <outlet property="powerLabel" destination="VTA-1v-xf4" id="U1R-co-9qp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YAY-e0-x06">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhZ-g5-dMc" userLabel="StatusView">
+                    <rect key="frame" x="140" y="0.0" width="50" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field-power" translatesAutoresizingMaskIntoConstraints="NO" id="jXQ-XU-zXC">
+                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTA-1v-xf4">
+                            <rect key="frame" x="20" y="0.0" width="30" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field-hp" translatesAutoresizingMaskIntoConstraints="NO" id="wg1-vi-1Fs">
+                            <rect key="frame" x="0.0" y="20" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12-8" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDA-nS-jAP">
+                            <rect key="frame" x="20" y="20" width="30" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="field-cards" translatesAutoresizingMaskIntoConstraints="NO" id="rZu-5O-ldJ">
+                            <rect key="frame" x="0.0" y="40" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3/2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mO5-ed-FaI">
+                            <rect key="frame" x="20" y="40" width="30" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="LWk-7B-1O7"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gt8-lB-rb4">
+                    <rect key="frame" x="10" y="0.0" width="130" height="60"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hhZ-g5-dMc" secondAttribute="bottom" id="Cfp-yr-8OA"/>
+                <constraint firstAttribute="bottom" secondItem="gt8-lB-rb4" secondAttribute="bottom" id="Jtz-Bo-rAm"/>
+                <constraint firstItem="hhZ-g5-dMc" firstAttribute="leading" secondItem="gt8-lB-rb4" secondAttribute="trailing" id="L7i-Gb-QDg"/>
+                <constraint firstItem="gt8-lB-rb4" firstAttribute="top" secondItem="YAY-e0-x06" secondAttribute="top" id="MBj-JX-oe6"/>
+                <constraint firstItem="hhZ-g5-dMc" firstAttribute="top" secondItem="YAY-e0-x06" secondAttribute="top" id="RGq-3h-Rvx"/>
+                <constraint firstItem="gt8-lB-rb4" firstAttribute="leading" secondItem="YAY-e0-x06" secondAttribute="leading" constant="10" id="Xxx-xx-4dC"/>
+                <constraint firstAttribute="trailing" secondItem="hhZ-g5-dMc" secondAttribute="trailing" constant="10" id="aCw-Wq-mXz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="214.5" y="139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="field-cards" width="40" height="40"/>
+        <image name="field-hp" width="25" height="25"/>
+        <image name="field-power" width="18" height="19"/>
+    </resources>
+</document>

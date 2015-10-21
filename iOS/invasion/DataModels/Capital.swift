@@ -35,9 +35,9 @@ class Capital {
     }
     
     func isBurn() -> Bool {
-        return ((kingdomField.isBurn ? 1 : 0) +
-            (questField.isBurn ? 1 : 0) +
-            (battleField.isBurn ? 1 : 0)) >= 2
+        return ((kingdomField.isBurn() ? 1 : 0) +
+            (questField.isBurn() ? 1 : 0) +
+            (battleField.isBurn() ? 1 : 0)) >= 2
     }
     
     

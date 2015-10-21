@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DF2ED64E1BD4D7830056F580 /* invasion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD181BD4D534009CA6F8 /* invasion.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		DF46E47F1BD4DBFB00CF72AD /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF46E47E1BD4DBFB00CF72AD /* Array.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD3A1BD4D534009CA6F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD151BD4D534009CA6F8 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD3C1BD4D534009CA6F8 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD1C1BD4D534009CA6F8 /* cards.json */; settings = {ASSET_TAGS = (); }; };
 		DF67BD3D1BD4D534009CA6F8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD1D1BD4D534009CA6F8 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
@@ -18,23 +19,31 @@
 		DF67BD421BD4D534009CA6F8 /* CardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD231BD4D534009CA6F8 /* CardManager.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD431BD4D534009CA6F8 /* CardTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD441BD4D534009CA6F8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD251BD4D534009CA6F8 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
-		DF67BD451BD4D534009CA6F8 /* WhGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD261BD4D534009CA6F8 /* WhGame.swift */; settings = {ASSET_TAGS = (); }; };
+		DF67BD451BD4D534009CA6F8 /* InvasionGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD261BD4D534009CA6F8 /* InvasionGame.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD461BD4D534009CA6F8 /* Battleground.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */; settings = {ASSET_TAGS = (); }; };
 		DF67BD471BD4D534009CA6F8 /* BattlegroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD481BD4D534009CA6F8 /* CapitalDownsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */; settings = {ASSET_TAGS = (); }; };
 		DF67BD491BD4D534009CA6F8 /* CapitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */; settings = {ASSET_TAGS = (); }; };
-		DF67BD4A1BD4D534009CA6F8 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD2E1BD4D534009CA6F8 /* CardView.xib */; settings = {ASSET_TAGS = (); }; };
-		DF67BD4B1BD4D534009CA6F8 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD4C1BD4D534009CA6F8 /* HomeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD4D1BD4D534009CA6F8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DF67BD4E1BD4D534009CA6F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD321BD4D534009CA6F8 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
-		DF67BD4F1BD4D534009CA6F8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD331BD4D534009CA6F8 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		DF67BD501BD4D534009CA6F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD351BD4D534009CA6F8 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
 		DF67BD511BD4D534009CA6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF67BD371BD4D534009CA6F8 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
-		DF67BD521BD4D534009CA6F8 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF67BD391BD4D534009CA6F8 /* Array.swift */; settings = {ASSET_TAGS = (); }; };
+		DF708DEA1BD4E981005A9EE0 /* CapitalUpsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF708DE91BD4E981005A9EE0 /* CapitalUpsideView.xib */; settings = {ASSET_TAGS = (); }; };
+		DF708DEF1BD4F356005A9EE0 /* KingdomFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF708DEE1BD4F356005A9EE0 /* KingdomFieldView.xib */; settings = {ASSET_TAGS = (); }; };
+		DF708DF11BD61692005A9EE0 /* KingdomFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF708DF01BD61692005A9EE0 /* KingdomFieldView.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD552241BD73AB500414139 /* QuestFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD552231BD73AB500414139 /* QuestFieldView.xib */; settings = {ASSET_TAGS = (); }; };
+		DFD552261BD73ACA00414139 /* QuestFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD552251BD73ACA00414139 /* QuestFieldView.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD552281BD7406800414139 /* BattleFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD552271BD7406800414139 /* BattleFieldView.xib */; settings = {ASSET_TAGS = (); }; };
+		DFD5522A1BD7408200414139 /* BattleFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD552291BD7408200414139 /* BattleFieldView.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD5522E1BD7472200414139 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5522C1BD7472200414139 /* CardView.xib */; settings = {ASSET_TAGS = (); }; };
+		DFD5522F1BD7472200414139 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5522D1BD7472200414139 /* CardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD552311BD76C1600414139 /* CardPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD552301BD76C1600414139 /* CardPanelView.xib */; settings = {ASSET_TAGS = (); }; };
+		DFD552331BD7704A00414139 /* CardPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD552321BD7704A00414139 /* CardPanelViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF46E47E1BD4DBFB00CF72AD /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
 		DF67BD151BD4D534009CA6F8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF67BD191BD4D534009CA6F8 /* invasion.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = invasion.xcdatamodel; sourceTree = "<group>"; };
 		DF67BD1C1BD4D534009CA6F8 /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
@@ -46,21 +55,29 @@
 		DF67BD231BD4D534009CA6F8 /* CardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardManager.swift; sourceTree = "<group>"; };
 		DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTemplate.swift; sourceTree = "<group>"; };
 		DF67BD251BD4D534009CA6F8 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		DF67BD261BD4D534009CA6F8 /* WhGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhGame.swift; sourceTree = "<group>"; };
+		DF67BD261BD4D534009CA6F8 /* InvasionGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvasionGame.swift; sourceTree = "<group>"; };
 		DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Battleground.storyboard; sourceTree = "<group>"; };
 		DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattlegroundViewController.swift; sourceTree = "<group>"; };
 		DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapitalDownsideView.xib; sourceTree = "<group>"; };
 		DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapitalView.swift; sourceTree = "<group>"; };
-		DF67BD2E1BD4D534009CA6F8 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTestData.swift; sourceTree = "<group>"; };
 		DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DF67BD321BD4D534009CA6F8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DF67BD331BD4D534009CA6F8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF67BD351BD4D534009CA6F8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DF67BD371BD4D534009CA6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DF67BD391BD4D534009CA6F8 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
-		DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF708DE91BD4E981005A9EE0 /* CapitalUpsideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CapitalUpsideView.xib; sourceTree = "<group>"; };
+		DF708DEE1BD4F356005A9EE0 /* KingdomFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomFieldView.xib; sourceTree = "<group>"; };
+		DF708DF01BD61692005A9EE0 /* KingdomFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomFieldView.swift; sourceTree = "<group>"; };
+		DF924DFC1BCB5F2400A252BD /* invasion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = invasion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD552231BD73AB500414139 /* QuestFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestFieldView.xib; sourceTree = "<group>"; };
+		DFD552251BD73ACA00414139 /* QuestFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestFieldView.swift; sourceTree = "<group>"; };
+		DFD552271BD7406800414139 /* BattleFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BattleFieldView.xib; sourceTree = "<group>"; };
+		DFD552291BD7408200414139 /* BattleFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleFieldView.swift; sourceTree = "<group>"; };
+		DFD5522C1BD7472200414139 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		DFD5522D1BD7472200414139 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		DFD552301BD76C1600414139 /* CardPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardPanelView.xib; sourceTree = "<group>"; };
+		DFD552321BD7704A00414139 /* CardPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPanelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF46E47D1BD4DBFB00CF72AD /* MyFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				DF46E47E1BD4DBFB00CF72AD /* Array.swift */,
+			);
+			path = MyFoundation;
+			sourceTree = "<group>";
+		};
 		DF67BD141BD4D534009CA6F8 /* invasion */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,8 +110,8 @@
 				DF67BD2D1BD4D534009CA6F8 /* Home */,
 				DF67BD331BD4D534009CA6F8 /* Info.plist */,
 				DF67BD341BD4D534009CA6F8 /* Launch */,
+				DF46E47D1BD4DBFB00CF72AD /* MyFoundation */,
 				DF67BD361BD4D534009CA6F8 /* Resources */,
-				DF67BD381BD4D534009CA6F8 /* WhFoundation */,
 			);
 			path = invasion;
 			sourceTree = "<group>";
@@ -134,7 +159,7 @@
 				DF67BD231BD4D534009CA6F8 /* CardManager.swift */,
 				DF67BD241BD4D534009CA6F8 /* CardTemplate.swift */,
 				DF67BD251BD4D534009CA6F8 /* Player.swift */,
-				DF67BD261BD4D534009CA6F8 /* WhGame.swift */,
+				DF67BD261BD4D534009CA6F8 /* InvasionGame.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -145,6 +170,7 @@
 				DF67BD281BD4D534009CA6F8 /* Battleground.storyboard */,
 				DF67BD291BD4D534009CA6F8 /* BattlegroundViewController.swift */,
 				DF67BD2A1BD4D534009CA6F8 /* Capital */,
+				DFD5522B1BD7472200414139 /* CardView */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -152,7 +178,9 @@
 		DF67BD2A1BD4D534009CA6F8 /* Capital */ = {
 			isa = PBXGroup;
 			children = (
+				DF708DED1BD4F356005A9EE0 /* CapitalField */,
 				DF67BD2B1BD4D534009CA6F8 /* CapitalDownsideView.xib */,
+				DF708DE91BD4E981005A9EE0 /* CapitalUpsideView.xib */,
 				DF67BD2C1BD4D534009CA6F8 /* CapitalView.swift */,
 			);
 			path = Capital;
@@ -161,8 +189,6 @@
 		DF67BD2D1BD4D534009CA6F8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DF67BD2E1BD4D534009CA6F8 /* CardView.xib */,
-				DF67BD2F1BD4D534009CA6F8 /* CardViewController.swift */,
 				DF67BD301BD4D534009CA6F8 /* HomeTestData.swift */,
 				DF67BD311BD4D534009CA6F8 /* HomeViewController.swift */,
 				DF67BD321BD4D534009CA6F8 /* Main.storyboard */,
@@ -186,12 +212,17 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		DF67BD381BD4D534009CA6F8 /* WhFoundation */ = {
+		DF708DED1BD4F356005A9EE0 /* CapitalField */ = {
 			isa = PBXGroup;
 			children = (
-				DF67BD391BD4D534009CA6F8 /* Array.swift */,
+				DF708DEE1BD4F356005A9EE0 /* KingdomFieldView.xib */,
+				DF708DF01BD61692005A9EE0 /* KingdomFieldView.swift */,
+				DFD552231BD73AB500414139 /* QuestFieldView.xib */,
+				DFD552251BD73ACA00414139 /* QuestFieldView.swift */,
+				DFD552271BD7406800414139 /* BattleFieldView.xib */,
+				DFD552291BD7408200414139 /* BattleFieldView.swift */,
 			);
-			path = WhFoundation;
+			path = CapitalField;
 			sourceTree = "<group>";
 		};
 		DF924DF31BCB5F2300A252BD = {
@@ -205,9 +236,20 @@
 		DF924DFD1BCB5F2400A252BD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */,
+				DF924DFC1BCB5F2400A252BD /* invasion.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DFD5522B1BD7472200414139 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				DFD5522C1BD7472200414139 /* CardView.xib */,
+				DFD5522D1BD7472200414139 /* CardViewController.swift */,
+				DFD552301BD76C1600414139 /* CardPanelView.xib */,
+				DFD552321BD7704A00414139 /* CardPanelViewController.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +268,8 @@
 			dependencies = (
 			);
 			name = Invasion;
-			productName = wh;
-			productReference = DF924DFC1BCB5F2400A252BD /* invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename.app */;
+			productName = Invasion;
+			productReference = DF924DFC1BCB5F2400A252BD /* invasion.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,12 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF67BD3C1BD4D534009CA6F8 /* cards.json in Resources */,
+				DF708DEA1BD4E981005A9EE0 /* CapitalUpsideView.xib in Resources */,
 				DF67BD4E1BD4D534009CA6F8 /* Main.storyboard in Resources */,
-				DF67BD4F1BD4D534009CA6F8 /* Info.plist in Resources */,
+				DFD552281BD7406800414139 /* BattleFieldView.xib in Resources */,
 				DF67BD481BD4D534009CA6F8 /* CapitalDownsideView.xib in Resources */,
 				DF67BD501BD4D534009CA6F8 /* LaunchScreen.storyboard in Resources */,
-				DF67BD4A1BD4D534009CA6F8 /* CardView.xib in Resources */,
+				DFD552311BD76C1600414139 /* CardPanelView.xib in Resources */,
 				DF67BD511BD4D534009CA6F8 /* Assets.xcassets in Resources */,
+				DFD5522E1BD7472200414139 /* CardView.xib in Resources */,
+				DF708DEF1BD4F356005A9EE0 /* KingdomFieldView.xib in Resources */,
+				DFD552241BD73AB500414139 /* QuestFieldView.xib in Resources */,
 				DF67BD461BD4D534009CA6F8 /* Battleground.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,16 +335,20 @@
 				DF67BD431BD4D534009CA6F8 /* CardTemplate.swift in Sources */,
 				DF67BD3E1BD4D534009CA6F8 /* Battleground.swift in Sources */,
 				DF67BD421BD4D534009CA6F8 /* CardManager.swift in Sources */,
-				DF67BD521BD4D534009CA6F8 /* Array.swift in Sources */,
-				DF67BD451BD4D534009CA6F8 /* WhGame.swift in Sources */,
+				DF46E47F1BD4DBFB00CF72AD /* Array.swift in Sources */,
+				DF67BD451BD4D534009CA6F8 /* InvasionGame.swift in Sources */,
 				DF67BD4C1BD4D534009CA6F8 /* HomeTestData.swift in Sources */,
+				DFD552331BD7704A00414139 /* CardPanelViewController.swift in Sources */,
 				DF67BD411BD4D534009CA6F8 /* Card.swift in Sources */,
 				DF67BD3A1BD4D534009CA6F8 /* AppDelegate.swift in Sources */,
+				DFD5522F1BD7472200414139 /* CardViewController.swift in Sources */,
 				DF67BD401BD4D534009CA6F8 /* CapitalField.swift in Sources */,
-				DF67BD4B1BD4D534009CA6F8 /* CardViewController.swift in Sources */,
+				DFD552261BD73ACA00414139 /* QuestFieldView.swift in Sources */,
+				DFD5522A1BD7408200414139 /* BattleFieldView.swift in Sources */,
 				DF2ED64E1BD4D7830056F580 /* invasion.xcdatamodeld in Sources */,
 				DF67BD491BD4D534009CA6F8 /* CapitalView.swift in Sources */,
 				DF67BD4D1BD4D534009CA6F8 /* HomeViewController.swift in Sources */,
+				DF708DF11BD61692005A9EE0 /* KingdomFieldView.swift in Sources */,
 				DF67BD3D1BD4D534009CA6F8 /* Constants.swift in Sources */,
 				DF67BD441BD4D534009CA6F8 /* Player.swift in Sources */,
 				DF67BD471BD4D534009CA6F8 /* BattlegroundViewController.swift in Sources */,
@@ -400,7 +450,7 @@
 				INFOPLIST_FILE = invasion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jirong.invasion;
-				PRODUCT_NAME = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				PRODUCT_NAME = invasion;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -413,7 +463,7 @@
 				INFOPLIST_FILE = invasion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jirong.invasion;
-				PRODUCT_NAME = invasion.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+				PRODUCT_NAME = invasion;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

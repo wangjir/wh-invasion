@@ -12,7 +12,7 @@ class Player {
   
     var uuid: String
     var name: String
-    var handCards = [String: Card]()
+    var handCards = [Card]()
     var capital: Capital
     
     init(uuid: String, name: String, capital: Capital) {
@@ -21,4 +21,7 @@ class Player {
         self.capital = capital
     }
     
+    func addCard(card: Card) {
+        handCards.append(card)
+    }
 }

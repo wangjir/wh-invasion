@@ -12,14 +12,14 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
     
-    var cardViewController: CardViewController!
+    var controller: CardPanelViewController!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.cardViewController = CardViewController()
-        self.view.addSubview(self.cardViewController.view)
+        self.controller = CardPanelViewController()
+        // self.view.addSubview(self.controller.view)
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,12 +30,17 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         let ht = HomeTestData(name: "hahaha")
         self.testLabel.text = ht.simple()
+        /*
+        let h = self.view.frame.height - 120
+        let w = self.view.frame.width
+        self.controller.view.frame = CGRect(x: 0, y: h, width: w, height: 120)
         
-        let cm = CardManager()
-        cm.loadCardFromJson()
-        let c = Card(uuid: NSUUID().UUIDString, cardTemplate: cm.cardTemplates[2])
-        cardViewController.setupCard(c)
- 
+        let game = InvasionGame()
+        game.initGame()
+        self.controller.setupPlayer(game.battleground!.players[1])
+        
+        self.controller.refresh()
+        */
         super.viewDidAppear(animated)
     }
 }

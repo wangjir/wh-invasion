@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CapitalUpsideView" customModule="invasion">
+            <connections>
+                <outlet property="battlefieldView" destination="VuS-xl-OiW" id="ne0-2h-5dO"/>
+                <outlet property="discardView" destination="zhI-Vc-IuJ" id="jEV-gd-WMh"/>
+                <outlet property="kingdomView" destination="mHy-sN-ATe" id="089-9g-So1"/>
+                <outlet property="questView" destination="N0Q-UM-ADa" id="2F7-aD-v3l"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GK7-IC-UIN">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wp9-GS-ssR" userLabel="Stack View Lvl 1">
+                    <rect key="frame" x="0.0" y="0.0" width="280" height="284"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bLR-vn-Crp" userLabel="Stack View Lvl 2">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="224"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0Q-UM-ADa" userLabel="QuestView">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="224"/>
+                                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="cXN-Du-5XT"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhI-Vc-IuJ" userLabel="DiscardView">
+                                    <rect key="frame" x="90" y="0.0" width="100" height="224"/>
+                                    <color key="backgroundColor" red="0.039068967849999997" green="1" blue="0.83094054510000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-sN-ATe" userLabel="KingdomView">
+                                    <rect key="frame" x="190" y="0.0" width="90" height="224"/>
+                                    <color key="backgroundColor" red="0.0" green="0.38431372549999998" blue="0.82352941180000006" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="90" id="o2d-Hh-JXh"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VuS-xl-OiW" userLabel="BattlefieldView">
+                            <rect key="frame" x="0.0" y="224" width="280" height="60"/>
+                            <color key="backgroundColor" red="0.027936154849999999" green="0.51607770870000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ZVY-dO-wH0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="VuS-xl-OiW" firstAttribute="top" secondItem="wp9-GS-ssR" secondAttribute="top" id="bqU-WO-0Wn"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bqU-WO-0Wn"/>
+                        </mask>
+                    </variation>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wp9-GS-ssR" firstAttribute="top" secondItem="GK7-IC-UIN" secondAttribute="top" id="RUU-QU-5mp"/>
+                <constraint firstAttribute="bottom" secondItem="wp9-GS-ssR" secondAttribute="bottom" id="Rxi-fH-gJo"/>
+                <constraint firstAttribute="trailing" secondItem="wp9-GS-ssR" secondAttribute="trailing" id="huD-9h-KUd"/>
+                <constraint firstItem="wp9-GS-ssR" firstAttribute="leading" secondItem="GK7-IC-UIN" secondAttribute="leading" id="wJ2-Ky-Q77"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="289" y="231"/>
+        </view>
+    </objects>
+</document>
