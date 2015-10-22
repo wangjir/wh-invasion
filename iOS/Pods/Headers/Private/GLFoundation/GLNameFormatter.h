@@ -1,0 +1,1 @@
+../../../GLFoundation/GLFoundation/Components/GLNameFormatter.h

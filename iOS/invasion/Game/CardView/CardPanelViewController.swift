@@ -6,6 +6,7 @@
 //  Copyright © 2015 Jirong Wang. All rights reserved.
 //
 
+import GLFoundation
 import UIKit
 
 class CardPanelViewController: UIViewController {
@@ -62,4 +63,8 @@ class CardPanelViewController: UIViewController {
         return v
     }
     
+    @IBAction func closePanelClicked(sender: AnyObject) {
+        publish(EVENT_CLOSE_CARD_PANEL)
+    }
+
 }

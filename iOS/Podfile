@@ -1,0 +1,45 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'git@github.com:upwlabs/PodsSpecs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+
+mode_dev = 'dev'
+mode_test = 'test'
+mode_release = 'release'
+
+config_file = './LocalPodfile.rb'
+require config_file if File.file? config_file
+
+POD_CURRENT_MODE ||= mode_release
+POD_DEV_ROOT ||= ENV['POD_DEV_ROOT']
+
+puts 'CURRENT MODE: ' + POD_CURRENT_MODE
+
+target 'Invasion' do
+    pod 'SwiftyUserDefaults'
+    pod 'SwiftDate'
+    pod 'SwiftyJSON'
+    pod 'SwiftValidator'
+
+    #--private pods begins
+    if (POD_CURRENT_MODE == 'dev')
+        if (!POD_DEV_ROOT)
+            puts 'POD_DEV_ROOT not defined, please set POD_DEV_ROOT in LocalPodfile.rb or export POD_DEV_ROOT in your rc file first'
+        end
+        pod 'GLFoundation', :path => POD_DEV_ROOT + '/GLFoundation-iOS'
+    elsif (POD_CURRENT_MODE == 'test')
+        pod 'GLFoundation', :git => 'git@github.com:upwlabs/GLFoundation-iOS.git', :branch => 'master'
+    else
+        pod 'GLFoundation', '1.4.2'
+    end
+    #--private pods ends
+end
+
+
+
+
+
+
+
+

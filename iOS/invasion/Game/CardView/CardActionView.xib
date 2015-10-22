@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardActionViewController" customModule="invasion" customModuleProvider="target">
+            <connections>
+                <outlet property="cardViewContainer" destination="LOp-w1-Lg6" id="efv-ds-VBo"/>
+                <outlet property="developmentButton" destination="6uZ-TR-cO0" id="RKJ-S4-xSn"/>
+                <outlet property="useButton" destination="obp-eC-fu7" id="m36-pX-aAA"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cfJ-0R-xtJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xe7-vP-dRI" userLabel="button container">
+                    <rect key="frame" x="0.0" y="300" width="214" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obp-eC-fu7">
+                            <rect key="frame" x="8" y="0.0" width="80" height="30"/>
+                            <color key="backgroundColor" red="0.18534182499759333" green="0.89209355760294395" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="Use">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="selected" title="Use"/>
+                            <connections>
+                                <action selector="useButtonClicked:" destination="-1" eventType="touchUpInside" id="jhY-EA-l8Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uZ-TR-cO0">
+                            <rect key="frame" x="96" y="0.0" width="110" height="30"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="development">
+                                <color key="titleColor" red="0.18534182499999999" green="0.89209355759999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="selected" title="Use"/>
+                            <connections>
+                                <action selector="developmentButtonClicked:" destination="-1" eventType="touchUpInside" id="fIm-0s-dxv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="d9d-X2-Bjv"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOp-w1-Lg6" userLabel="card view">
+                    <rect key="frame" x="0.0" y="0.0" width="214" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="214" id="Tml-tU-egY"/>
+                        <constraint firstAttribute="height" constant="300" id="yal-2y-miW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xe7-vP-dRI" firstAttribute="top" secondItem="LOp-w1-Lg6" secondAttribute="bottom" id="1yz-OH-pXh"/>
+                <constraint firstItem="LOp-w1-Lg6" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4Sc-Rp-OR2"/>
+                <constraint firstItem="LOp-w1-Lg6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6FD-ZD-68g"/>
+                <constraint firstAttribute="bottom" secondItem="xe7-vP-dRI" secondAttribute="bottom" id="6mx-U7-K4T"/>
+                <constraint firstItem="LOp-w1-Lg6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aqT-df-4SE"/>
+                <constraint firstItem="xe7-vP-dRI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kju-5j-iiD"/>
+                <constraint firstAttribute="trailing" secondItem="xe7-vP-dRI" secondAttribute="trailing" id="ufk-8K-32E"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="4Sc-Rp-OR2"/>
+                    <exclude reference="1yz-OH-pXh"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="-35" y="254"/>
+        </view>
+    </objects>
+</document>

@@ -12,14 +12,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
     
-    var controller: CardPanelViewController!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.controller = CardPanelViewController()
-        // self.view.addSubview(self.controller.view)
     }
 
     override func didReceiveMemoryWarning() {

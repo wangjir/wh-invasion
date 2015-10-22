@@ -35,6 +35,11 @@ class CapitalView: UIView {
         questFV.setField(self.capital.questField)
         questView.addSubview(questFV)
         
+        // battleFV = BattleFieldView()
+        // battleFV.setField(self.capital.battleField)
+        // var test  = UINib(nibName: "BattleFieldView", bundle: nil).instantiateWithOwner(battleFV, options: nil)[0] as! UIView
+        // battlefieldView.addSubview(test)
+        
         battleFV = BattleFieldView(frame: battlefieldView.bounds)
         battleFV.setField(self.capital.battleField)
         battlefieldView.addSubview(battleFV)

@@ -1,0 +1,47 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - GLFoundation (1.4.2):
+    - BlocksKit (~> 2.2.5)
+    - libextobjc/EXTScope (~> 0.4.1)
+    - Masonry (~> 0.5.3)
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - Masonry (0.5.3)
+  - SwiftDate (1.2)
+  - SwiftValidator (3.0.1)
+  - SwiftyJSON (2.3.0)
+  - SwiftyUserDefaults (2.0.0)
+
+DEPENDENCIES:
+  - GLFoundation (= 1.4.2)
+  - SwiftDate
+  - SwiftValidator
+  - SwiftyJSON
+  - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  GLFoundation: 4db3265939544bd381d2915c6cb107979ddfcc5f
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Masonry: 9f515466afe48632562342a40a1c224071a1a022
+  SwiftDate: 49ebd4efb5f82336cfc2b1d8a6622f47d4b17370
+  SwiftValidator: c59223144754045d7691febdc3b3ecc2e73b609c
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  SwiftyUserDefaults: 1266e9734c68bcfbac8294ee84173dc8ba6db312
+
+COCOAPODS: 0.38.2

@@ -1,0 +1,6 @@
+framework module GLFoundation {
+  umbrella header "GLFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -5,6 +5,7 @@
 //  Copyright © 2015 Jirong Wang. All rights reserved.
 //
 
+import GLFoundation
 import UIKit
 
 class BattlegroundViewController: UIViewController {
@@ -23,9 +24,16 @@ class BattlegroundViewController: UIViewController {
     var oppnCapital: CapitalUpsideView!
     var cardPanel: CardPanelViewController!
     
+    var cardActionViewController: CardActionViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        cardActionViewController = CardActionViewController()
+        
+        self.subscribeEvents()
+        
+        // below is test code
         game = InvasionGame()
         game.initGame()
         
@@ -43,6 +51,7 @@ class BattlegroundViewController: UIViewController {
         self.yourCapitalViewContainer.addSubview(yourCapital)
         self.oppnCapitalViewContainer.addSubview(oppnCapital)
         self.cardPanelViewContainer.hidden = true
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -50,20 +59,54 @@ class BattlegroundViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        self.cardPanelViewContainer.removeAllSubviews()
+        self.cardPanelViewContainer.addSubview(cardPanel.view)
+        cardPanel.view.frame = self.cardPanelViewContainer.bounds
+        
         yourCapital.resize(self.yourCapitalViewContainer.bounds)
         oppnCapital.resize(self.oppnCapitalViewContainer.bounds)
         super.viewDidAppear(animated)
+        
+        /*
+        let a = CardActionViewController()
+        a.setupCard(battleground.players[0].handCards[0])
+        self.view.addSubview(a.view)
+        */
     }
     
+    func subscribeEvents() {
+        subscribe(EVENT_CLOSE_CARD_PANEL) { event in
+            self.closeCardPanel()
+        }
+    }
+    
+    /* hand-cards panel functions */
     @IBAction func expandCardPanelClicked(sender: AnyObject) {
         if (!self.cardPanelViewContainer.hidden) {
             return
         }
-        self.cardPanelViewContainer.hidden = false
-        self.cardPanelViewContainer.addSubview(cardPanel.view)
-        cardPanel.view.frame = self.cardPanelViewContainer.bounds
-        cardPanel.refresh()
-        
+        expandCardPanel()
     }
     
+    func expandCardPanel() {
+        self.cardPanelViewContainer.hidden = false
+        cardPanel.refresh()
+    }
+    
+    func closeCardPanel() {
+        self.cardPanelViewContainer.hidden = true
+    }
+    
+    /* card action panel functions */
+    func showCardActionView(card: Card) {
+        
+        self.cardActionViewController.setupCard(card)
+        
+        self.cardPanelViewContainer.hidden = false
+        cardPanel.refresh()
+    }
+    
+    func hideCardActionView() {
+        self.cardPanelViewContainer.hidden = true
+    }
 }

@@ -4,4 +4,7 @@
    <FileRef
       location = "container:/Users/jirongwang/Work/personal/wh-invasion/iOS/invasion.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>
