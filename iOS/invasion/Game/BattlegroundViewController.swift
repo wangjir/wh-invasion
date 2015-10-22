@@ -78,6 +78,14 @@ class BattlegroundViewController: UIViewController {
         subscribe(EVENT_CLOSE_CARD_PANEL) { event in
             self.closeCardPanel()
         }
+        subscribe(EVENT_SHOW_CARD_ACTION_PANEL) { event in
+            let data = event.data as! NSDictionary
+            let c = data["card"]
+            self.showCardActionView(c as! Card)
+        }
+        subscribe(EVENT_HIDE_CARD_ACTION_PANEL) { event in
+            self.hideCardActionView()
+        }
     }
     
     /* hand-cards panel functions */
@@ -99,14 +107,13 @@ class BattlegroundViewController: UIViewController {
     
     /* card action panel functions */
     func showCardActionView(card: Card) {
-        
-        self.cardActionViewController.setupCard(card)
-        
-        self.cardPanelViewContainer.hidden = false
-        cardPanel.refresh()
+        cardActionViewController.setupCard(card)
+        if (cardActionViewController.view.superview == nil) {
+            self.view.addSubview(cardActionViewController.view)
+        }
     }
     
     func hideCardActionView() {
-        self.cardPanelViewContainer.hidden = true
+        cardActionViewController.view.removeFromSuperview()
     }
 }

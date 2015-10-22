@@ -36,6 +36,13 @@ class CardActionViewController: UIViewController {
     
     func setupCard(card: Card) {
         self.card = card
+        if (self.viewIfLoaded != nil) {
+            cardViewController.setupCard(card)
+        }
+    }
+    
+    @IBAction func closeButtonClicked(sender: AnyObject) {
+        publish(EVENT_HIDE_CARD_ACTION_PANEL)
     }
     
     @IBAction func useButtonClicked(sender: AnyObject) {

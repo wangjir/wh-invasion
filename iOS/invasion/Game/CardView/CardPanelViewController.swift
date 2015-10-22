@@ -41,8 +41,11 @@ class CardPanelViewController: UIViewController {
         for v in cardListView.arrangedSubviews {
             v.removeFromSuperview()
         }
-        for c in self.player.handCards {
-            cardListView.addArrangedSubview(miniCardView(c))
+        
+        for i in 0..<self.player.handCards.count {
+            let v = miniCardView(self.player.handCards[i])
+            v.tag = 100 + i
+            cardListView.addArrangedSubview(v)
         }
     }
     
@@ -60,11 +63,20 @@ class CardPanelViewController: UIViewController {
         lb.text = "\(card.currentPower)/\(card.currentHP)"
         v.addSubview(lb)
         
+        let gesture = UITapGestureRecognizer(target: self, action: "handCardSelected:")
+        v.addGestureRecognizer(gesture)
+
         return v
     }
     
     @IBAction func closePanelClicked(sender: AnyObject) {
         publish(EVENT_CLOSE_CARD_PANEL)
+    }
+    
+    func handCardSelected(sender: UITapGestureRecognizer) {
+        let i : Int = sender.view!.tag - 100
+        let c = self.player.handCards[i]
+        publish(EVENT_SHOW_CARD_ACTION_PANEL, data: ["card": c])
     }
 
 }
