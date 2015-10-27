@@ -4,20 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController" customModule="invasion">
-            <connections>
-                <outlet property="cardCost" destination="nIF-Vj-agQ" id="xL2-gc-9Lp"/>
-                <outlet property="cardDescription" destination="JCB-4a-kV9" id="C3T-do-hv0"/>
-                <outlet property="cardImage" destination="BAd-ay-2hp" id="Evn-LV-Toh"/>
-                <outlet property="cardName" destination="yXP-rm-8yo" id="jDA-cW-507"/>
-                <outlet property="cardType" destination="t9Z-s1-xUw" id="ycE-Cb-35Y"/>
-                <outlet property="hp" destination="KUI-uG-lUZ" id="hGS-i5-aUv"/>
-                <outlet property="power" destination="Tr4-9a-o8b" id="3D4-T0-Cvg"/>
-                <outlet property="view" destination="iN0-l3-epB" id="F3x-g8-Ybu"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView" customModule="invasion">
             <rect key="frame" x="0.0" y="0.0" width="214" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -66,6 +55,15 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardCost" destination="nIF-Vj-agQ" id="2WT-Mg-rdZ"/>
+                <outlet property="cardDescription" destination="JCB-4a-kV9" id="4lR-qe-A0c"/>
+                <outlet property="cardImage" destination="BAd-ay-2hp" id="Tbt-fd-ju7"/>
+                <outlet property="cardName" destination="yXP-rm-8yo" id="edn-tP-Etx"/>
+                <outlet property="cardType" destination="t9Z-s1-xUw" id="EdQ-xy-MMU"/>
+                <outlet property="hp" destination="KUI-uG-lUZ" id="4Zk-MZ-abp"/>
+                <outlet property="power" destination="Tr4-9a-o8b" id="vvl-bL-aQh"/>
+            </connections>
         </view>
     </objects>
     <resources>

@@ -1,5 +1,5 @@
 //
-//  CardViewController.swift
+//  CardView.swift
 //  Wh
 //
 //  Created by Jirong Wang on 10/16/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CardViewController: UIViewController {
+class CardView: UIView {
     
     // below is unchangeable
     @IBOutlet weak var cardName: UILabel!
@@ -22,16 +22,6 @@ class CardViewController: UIViewController {
     @IBOutlet weak var hp: UILabel!
     
     var card : Card?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     func setupCard(card: Card) {
         self.card = card

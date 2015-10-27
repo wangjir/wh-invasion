@@ -4,16 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KingdomFieldView" customModule="invasion">
-            <connections>
-                <outlet property="cardLabel" destination="5JB-0K-NM8" id="esc-cX-0EA"/>
-                <outlet property="cardStackList" destination="Xu2-Nd-j8t" id="twS-ws-LQx"/>
-                <outlet property="hpLabel" destination="XXV-Pm-eR3" id="jXS-Jy-5UJ"/>
-                <outlet property="powerLabel" destination="qpR-gG-hyy" id="1Gb-zl-Z91"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KingdomFieldView" customModule="invasion">
             <rect key="frame" x="0.0" y="0.0" width="90" height="165"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -115,6 +108,12 @@
                     <exclude reference="fwg-DI-Z80"/>
                 </mask>
             </variation>
+            <connections>
+                <outlet property="cardLabel" destination="5JB-0K-NM8" id="Ocm-c6-5T7"/>
+                <outlet property="cardStackList" destination="Xu2-Nd-j8t" id="BUF-LM-v65"/>
+                <outlet property="hpLabel" destination="XXV-Pm-eR3" id="BmA-d6-kt7"/>
+                <outlet property="powerLabel" destination="qpR-gG-hyy" id="J5M-fz-XD6"/>
+            </connections>
             <point key="canvasLocation" x="166" y="47.5"/>
         </view>
     </objects>

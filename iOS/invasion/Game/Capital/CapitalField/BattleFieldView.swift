@@ -17,28 +17,9 @@ class BattleFieldView: UIView {
     
     var capitalField: CapitalField!
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.load()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.load()
-    }
-    
-    func load() {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "BattleFieldView", bundle: bundle)
-        let v = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        v.frame = bounds
-        addSubview(v)
-    }
-    
     func setField(capitalField : CapitalField) {
         if ((self.capitalField) == nil) {
             self.capitalField = capitalField
-            // self.refresh()
         }
     }
     

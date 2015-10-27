@@ -63,17 +63,33 @@
                                     <constraint firstAttribute="height" constant="120" id="8X0-g5-6Fq"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uNe-Vi-gXe" userLabel="card action container">
+                                <rect key="frame" x="53" y="50" width="214" height="330"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="mFE-qK-bbc"/>
+                                    <constraint firstAttribute="height" constant="330" id="xhT-J5-UAS"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2uq-D9-EsL" firstAttribute="top" secondItem="LgX-6K-dvG" secondAttribute="bottom" id="0lv-Kf-GFr"/>
+                            <constraint firstItem="uNe-Vi-gXe" firstAttribute="centerX" secondItem="bBs-hK-w2G" secondAttribute="centerX" id="5WN-XU-hHS"/>
+                            <constraint firstItem="uNe-Vi-gXe" firstAttribute="centerY" secondItem="bBs-hK-w2G" secondAttribute="centerY" id="6CN-ep-UYv"/>
                             <constraint firstItem="MMV-zr-1H1" firstAttribute="leading" secondItem="bBs-hK-w2G" secondAttribute="leading" id="MQZ-vx-Bd7"/>
                             <constraint firstItem="LgX-6K-dvG" firstAttribute="leading" secondItem="bBs-hK-w2G" secondAttribute="leading" id="RXC-hc-UVc"/>
                             <constraint firstAttribute="trailing" secondItem="MMV-zr-1H1" secondAttribute="trailing" id="SxE-FS-Dlv"/>
                             <constraint firstAttribute="trailing" secondItem="LgX-6K-dvG" secondAttribute="trailing" id="YSD-KV-N5r"/>
                             <constraint firstItem="LgX-6K-dvG" firstAttribute="top" secondItem="bBs-hK-w2G" secondAttribute="top" constant="20" id="evb-zb-ZJY"/>
+                            <constraint firstItem="uNe-Vi-gXe" firstAttribute="top" secondItem="1ph-8i-23f" secondAttribute="bottom" constant="30" id="weJ-lo-ibI"/>
                             <constraint firstItem="2uq-D9-EsL" firstAttribute="top" secondItem="MMV-zr-1H1" secondAttribute="bottom" id="zKt-Vn-C7y"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6CN-ep-UYv"/>
+                            </mask>
+                        </variation>
                     </view>
                     <value key="contentSizeForViewInPopover" type="size" width="320" height="568"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
@@ -81,6 +97,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="cardActionPanelContainer" destination="uNe-Vi-gXe" id="MSS-V7-O1q"/>
                         <outlet property="cardPanelViewContainer" destination="MMV-zr-1H1" id="V1T-la-FZa"/>
                         <outlet property="controlPaneView" destination="f0h-Ps-Qb9" id="pET-7O-Gwz"/>
                         <outlet property="expandCardPanelButton" destination="FfX-pp-pbe" id="Org-7d-Mra"/>

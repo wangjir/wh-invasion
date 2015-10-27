@@ -39,9 +39,10 @@
 		DFD552281BD7406800414139 /* BattleFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD552271BD7406800414139 /* BattleFieldView.xib */; settings = {ASSET_TAGS = (); }; };
 		DFD5522A1BD7408200414139 /* BattleFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD552291BD7408200414139 /* BattleFieldView.swift */; settings = {ASSET_TAGS = (); }; };
 		DFD5522E1BD7472200414139 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD5522C1BD7472200414139 /* CardView.xib */; settings = {ASSET_TAGS = (); }; };
-		DFD5522F1BD7472200414139 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5522D1BD7472200414139 /* CardViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFD5522F1BD7472200414139 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD5522D1BD7472200414139 /* CardView.swift */; settings = {ASSET_TAGS = (); }; };
 		DFD552311BD76C1600414139 /* CardPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD552301BD76C1600414139 /* CardPanelView.xib */; settings = {ASSET_TAGS = (); }; };
 		DFD552331BD7704A00414139 /* CardPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD552321BD7704A00414139 /* CardPanelViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DFDE68A01BDA2C8E00AB1736 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDE689F1BDA2C8E00AB1736 /* UIView.swift */; settings = {ASSET_TAGS = (); }; };
 		DFF238E11BD8E7D3008D8E0E /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = DFF238E01BD8E7D3008D8E0E /* cards.json */; settings = {ASSET_TAGS = (); }; };
 		DFF238E31BD8E95E008D8E0E /* PubsubEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF238E21BD8E95E008D8E0E /* PubsubEvents.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -83,9 +84,10 @@
 		DFD552271BD7406800414139 /* BattleFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BattleFieldView.xib; sourceTree = "<group>"; };
 		DFD552291BD7408200414139 /* BattleFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleFieldView.swift; sourceTree = "<group>"; };
 		DFD5522C1BD7472200414139 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		DFD5522D1BD7472200414139 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		DFD5522D1BD7472200414139 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		DFD552301BD76C1600414139 /* CardPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardPanelView.xib; sourceTree = "<group>"; };
 		DFD552321BD7704A00414139 /* CardPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPanelViewController.swift; sourceTree = "<group>"; };
+		DFDE689F1BDA2C8E00AB1736 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		DFF238E01BD8E7D3008D8E0E /* cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
 		DFF238E21BD8E95E008D8E0E /* PubsubEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PubsubEvents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				DF46E47E1BD4DBFB00CF72AD /* Array.swift */,
+				DFDE689F1BDA2C8E00AB1736 /* UIView.swift */,
 			);
 			path = MyFoundation;
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 				DFD552301BD76C1600414139 /* CardPanelView.xib */,
 				DFD552321BD7704A00414139 /* CardPanelViewController.swift */,
 				DFD5522C1BD7472200414139 /* CardView.xib */,
-				DFD5522D1BD7472200414139 /* CardViewController.swift */,
+				DFD5522D1BD7472200414139 /* CardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -427,12 +430,13 @@
 				DFD552331BD7704A00414139 /* CardPanelViewController.swift in Sources */,
 				DF67BD411BD4D534009CA6F8 /* Card.swift in Sources */,
 				DF67BD3A1BD4D534009CA6F8 /* AppDelegate.swift in Sources */,
-				DFD5522F1BD7472200414139 /* CardViewController.swift in Sources */,
+				DFD5522F1BD7472200414139 /* CardView.swift in Sources */,
 				DF67BD401BD4D534009CA6F8 /* CapitalField.swift in Sources */,
 				DFD552261BD73ACA00414139 /* QuestFieldView.swift in Sources */,
 				DF1A4BEA1BD887490099088B /* CardActionViewController.swift in Sources */,
 				DFD5522A1BD7408200414139 /* BattleFieldView.swift in Sources */,
 				DF2ED64E1BD4D7830056F580 /* invasion.xcdatamodeld in Sources */,
+				DFDE68A01BDA2C8E00AB1736 /* UIView.swift in Sources */,
 				DF67BD491BD4D534009CA6F8 /* CapitalView.swift in Sources */,
 				DF67BD4D1BD4D534009CA6F8 /* HomeViewController.swift in Sources */,
 				DF708DF11BD61692005A9EE0 /* KingdomFieldView.swift in Sources */,

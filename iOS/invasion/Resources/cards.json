@@ -17,11 +17,14 @@
         "hp": 1,
         "skills": [
             {
-                "skill": "Battlefield only",
+                "skill": "zone only",
+                "zone": "Battlefield",
+                "mode": "passive",
                 "description": "Battlefield only"
             }
         ]
     },
+
     "cs_2": {
         "set": "Core",
         "type": "Unit",
@@ -40,11 +43,17 @@
         "hp": 3,
         "skills": [
             {
-                "skill": "When leave play, opponent sacrifice one unit",
+                "skill": "opponent sacrifice one unit",
+                "mode": "positive",
+                "zone": "any",
+                "forced": 1,
+                "action_time": "unit_leave_play",
+                "action_target_zone": "corresponding",
                 "description": "Forced: After this unit leaves play, each opponent must sacrifice a unit in this corresponding zone."
             }
         ]
     },
+
     "cs_3": {
         "set": "Core",
         "type": "Unit",
@@ -63,9 +72,159 @@
         "hp": 2,
         "skills": [
             {
-                "skill": "Toughness 1",
+                "skill": "Toughness",
+                "quantity": 1,
+                "mode": "passive",
+                "short": "Toughness 1",
                 "description": "Whenever this unit is assigned damage, cancel 1 of that damage."
             }
         ]
     },
+
+    "cs_4": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_4.jpg",
+        "name": "Troll Slayers",
+        "unit_type": ["Slayer"],
+        "cost": 3,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 3,
+        "skills": [
+            {
+                "skill": "self get power",
+                "mode": "passive",
+                "zone": "Battlefield",
+                "quantity": 2,  
+                "action_requirement": ["2 developments"],
+                "description": "Battlefield. This unit gains two powers while you have at least two developments in this zone."
+            }
+        ]
+    },
+    
+    "cs_5": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_5.jpg",
+        "name": "Runesmith",
+        "unit_type": ["Priest"],
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 1,
+        "skills": [
+            {
+                "skill": "target get power",
+                "mode": "positive",
+                "zone": "Quest",
+                "cost": 2,
+                "quantity": 1,
+                "action_time": "any",
+                "action_target_zone": "any",
+                "description": "Quest. Action: Spend 2 resources to have a target unit gain one power until the end of the turn."
+            }
+        ]
+    },
+    
+    "cs_6": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 1,
+        "image": "cs_6.jpg",
+        "name": "Durgnar the Bold",
+        "unit_type": ["Hero", "Warrior"],
+        "cost": 3,
+        "loyalty_need": {
+            "Dwarf": 3
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 2,
+        "hp": 2,
+        "skills": [
+            {
+                "skill": "Limit one Hero per zone.",
+                "mode": "passive",
+                "zone": "any",
+                "description": "Limit one Hero per zone."
+            },
+            {
+                "skill": "gain 2 powers when one section is burning.",
+                "description": "This unit gains two powers while one section of your capital is burning."
+            }
+        ]
+    },
+    
+    "cs_7": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 1,
+        "image": "cs_7.jpg",
+        "name": "King Kazador",
+        "unit_type": ["Hero", "Warrior"],
+        "cost": 6,
+        "loyalty_need": {
+            "Dwarf": 5
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 3,
+        "hp": 6,
+        "skills": [
+            {
+                "skill": "Limit one Hero per zone.",
+                "description": "Limit one Hero per zone."
+            },
+            {
+                "skill": "Toughness",
+                "quantity": 2,
+                "short": "Toughness 2",
+            },
+            {
+                "skill": "more 3 resources for target",
+                "description": "opponents cannot target this unit with card effects unless they pay an additional 3 resources per effect."
+            }
+        ]
+    },
+
+    "cs_8": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_8.jpg",
+        "name": "Dwarf Cannon Crew",
+        "unit_type": ["Engineer"],
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 2,
+        "skills": [
+            {
+                "skill": "search top 5 support card.",
+                "forced": 1,
+                "description": "Forced: After this unit enters play, search the top five cards of your deck for a support card with cost 2 or lower and put it into this zone, if able. Then shuffle your deck."
+            }
+        ]
+    },
+
 }

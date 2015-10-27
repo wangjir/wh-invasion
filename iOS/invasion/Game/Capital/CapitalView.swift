@@ -20,29 +20,38 @@ class CapitalView: UIView {
     var questFV: QuestFieldView!
     var battleFV: BattleFieldView!
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.loadSubviews()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.loadSubviews()
+    }
+    
+    func loadSubviews() {
+        kingdomFV = UIView.loadFromNibNamed("KingdomFieldView") as! KingdomFieldView
+        questFV = UIView.loadFromNibNamed("QuestFieldView") as! QuestFieldView
+        battleFV = UIView.loadFromNibNamed("BattleFieldView") as! BattleFieldView
+    }
+    
+    override func layoutSubviews() {
+        kingdomView.addSubview(kingdomFV)
+        questView.addSubview(questFV)
+        battlefieldView.addSubview(battleFV)
+        super.layoutSubviews()
+    }
+
     func setCapital(capital: Capital) {
         // can only be called once
         if ((self.capital) != nil) {
             return
         }
         self.capital = capital
-        
-        kingdomFV = KingdomFieldView(frame: kingdomView.bounds)
         kingdomFV.setField(self.capital.kingdomField)
-        kingdomView.addSubview(kingdomFV)
-        
-        questFV = QuestFieldView(frame: questView.bounds)
         questFV.setField(self.capital.questField)
-        questView.addSubview(questFV)
-        
-        // battleFV = BattleFieldView()
-        // battleFV.setField(self.capital.battleField)
-        // var test  = UINib(nibName: "BattleFieldView", bundle: nil).instantiateWithOwner(battleFV, options: nil)[0] as! UIView
-        // battlefieldView.addSubview(test)
-        
-        battleFV = BattleFieldView(frame: battlefieldView.bounds)
         battleFV.setField(self.capital.battleField)
-        battlefieldView.addSubview(battleFV)
     }
     
     func resize(frame: CGRect) {
@@ -62,45 +71,9 @@ class CapitalView: UIView {
 
 
 class CapitalDownsideView: CapitalView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.load()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.load()
-    }
-    
-    func load() {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "CapitalDownsideView", bundle: bundle)
-        let v = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        v.frame = bounds
-        addSubview(v)
-    }
-    
+
 }
 
 class CapitalUpsideView: CapitalView {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.load()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        self.load()
-    }
-    
-    func load() {
-        let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "CapitalUpsideView", bundle: bundle)
-        let v = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        v.frame = bounds
-        addSubview(v)
-    }
-    
+
 }

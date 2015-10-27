@@ -4,16 +4,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BattleFieldView" customModule="invasion">
-            <connections>
-                <outlet property="cardLabel" destination="mO5-ed-FaI" id="NRI-TV-TMM"/>
-                <outlet property="cardStackList" destination="gt8-lB-rb4" id="QNj-RG-NPK"/>
-                <outlet property="hpLabel" destination="JDA-nS-jAP" id="vGI-tv-yHN"/>
-                <outlet property="powerLabel" destination="VTA-1v-xf4" id="U1R-co-9qp"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="YAY-e0-x06">
+        <view contentMode="scaleToFill" id="YAY-e0-x06" customClass="BattleFieldView" customModule="invasion">
             <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -71,6 +64,12 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardLabel" destination="mO5-ed-FaI" id="5EZ-HJ-aJQ"/>
+                <outlet property="cardStackList" destination="gt8-lB-rb4" id="QDe-kO-VuF"/>
+                <outlet property="hpLabel" destination="JDA-nS-jAP" id="x5p-Oq-JWH"/>
+                <outlet property="powerLabel" destination="VTA-1v-xf4" id="aMc-24-lj2"/>
+            </connections>
             <point key="canvasLocation" x="214.5" y="139"/>
         </view>
     </objects>

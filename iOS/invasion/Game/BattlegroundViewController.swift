@@ -14,6 +14,7 @@ class BattlegroundViewController: UIViewController {
     @IBOutlet weak var oppnCapitalViewContainer: UIView!
     @IBOutlet weak var yourCapitalViewContainer: UIView!
     @IBOutlet weak var cardPanelViewContainer: UIView!
+    @IBOutlet weak var cardActionPanelContainer: UIView!
     
     @IBOutlet weak var expandCardPanelButton: UIButton!
     
@@ -29,7 +30,15 @@ class BattlegroundViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        cardActionViewController = CardActionViewController()
+        self.cardActionViewController = CardActionViewController()
+        yourCapital = UIView.loadFromNibNamed("CapitalDownsideView") as! CapitalDownsideView
+        oppnCapital = UIView.loadFromNibNamed("CapitalUpsideView") as! CapitalUpsideView
+        
+        self.yourCapitalViewContainer.addSubview(yourCapital)
+        self.oppnCapitalViewContainer.addSubview(oppnCapital)
+        self.cardActionPanelContainer.addSubview(self.cardActionViewController.view)
+        self.cardPanelViewContainer.hidden = true
+        self.cardActionPanelContainer.hidden = true
         
         self.subscribeEvents()
         
@@ -39,19 +48,11 @@ class BattlegroundViewController: UIViewController {
         
         battleground = game.battleground
         
-        yourCapital = CapitalDownsideView(frame: self.yourCapitalViewContainer.bounds)
         yourCapital.setCapital(battleground.players[0].capital)
-        
-        oppnCapital = CapitalUpsideView(frame: self.oppnCapitalViewContainer.bounds)
         oppnCapital.setCapital(battleground.players[1].capital)
         
         cardPanel = CardPanelViewController()
         cardPanel.setupPlayer(battleground.players[0])
-        
-        self.yourCapitalViewContainer.addSubview(yourCapital)
-        self.oppnCapitalViewContainer.addSubview(oppnCapital)
-        self.cardPanelViewContainer.hidden = true
-        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -67,11 +68,6 @@ class BattlegroundViewController: UIViewController {
         oppnCapital.resize(self.oppnCapitalViewContainer.bounds)
         super.viewDidAppear(animated)
         
-        /*
-        let a = CardActionViewController()
-        a.setupCard(battleground.players[0].handCards[0])
-        self.view.addSubview(a.view)
-        */
     }
     
     func subscribeEvents() {
@@ -108,12 +104,16 @@ class BattlegroundViewController: UIViewController {
     /* card action panel functions */
     func showCardActionView(card: Card) {
         cardActionViewController.setupCard(card)
-        if (cardActionViewController.view.superview == nil) {
-            self.view.addSubview(cardActionViewController.view)
-        }
+        self.cardActionPanelContainer.hidden = false
+            /*
+            v.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor).active = true
+            v.topAnchor.constraintEqualToAnchor(view.topAnchor, constant: 100.0).active = true
+            v.widthAnchor.constraintEqualToConstant(v.frame.width).active = true
+            v.heightAnchor.constraintEqualToConstant(v.frame.height).active = true
+            */
     }
     
     func hideCardActionView() {
-        cardActionViewController.view.removeFromSuperview()
+        self.cardActionPanelContainer.hidden = true
     }
 }

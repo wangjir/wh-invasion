@@ -58,7 +58,7 @@
                         <constraint firstAttribute="height" constant="300" id="yal-2y-miW"/>
                     </constraints>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-f6-Sw5">
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkK-f6-Sw5">
                     <rect key="frame" x="190" y="0.0" width="24" height="24"/>
                     <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -85,9 +85,12 @@
                 <constraint firstItem="LOp-w1-Lg6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6FD-ZD-68g"/>
                 <constraint firstAttribute="bottom" secondItem="xe7-vP-dRI" secondAttribute="bottom" id="6mx-U7-K4T"/>
                 <constraint firstAttribute="bottom" secondItem="OkK-f6-Sw5" secondAttribute="bottom" id="8bk-R8-x5T"/>
+                <constraint firstAttribute="bottom" secondItem="OkK-f6-Sw5" secondAttribute="bottom" id="NXv-Tp-UMb"/>
                 <constraint firstItem="OkK-f6-Sw5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VlW-zO-7Tz"/>
+                <constraint firstItem="OkK-f6-Sw5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z2E-C0-3vA"/>
                 <constraint firstItem="LOp-w1-Lg6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aqT-df-4SE"/>
                 <constraint firstItem="xe7-vP-dRI" firstAttribute="top" secondItem="OkK-f6-Sw5" secondAttribute="bottom" id="f2r-G5-d4Y"/>
+                <constraint firstAttribute="trailing" secondItem="OkK-f6-Sw5" secondAttribute="trailing" id="kBw-2v-Fei"/>
                 <constraint firstItem="xe7-vP-dRI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kju-5j-iiD"/>
                 <constraint firstAttribute="trailing" secondItem="xe7-vP-dRI" secondAttribute="trailing" id="ufk-8K-32E"/>
             </constraints>
@@ -98,7 +101,10 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="4Sc-Rp-OR2"/>
+                    <exclude reference="2x0-r1-64L"/>
+                    <exclude reference="8bk-R8-x5T"/>
                     <exclude reference="VlW-zO-7Tz"/>
+                    <exclude reference="Z2E-C0-3vA"/>
                     <exclude reference="1yz-OH-pXh"/>
                     <exclude reference="f2r-G5-d4Y"/>
                 </mask>

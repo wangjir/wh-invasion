@@ -46,7 +46,7 @@ class InvasionGame {
         p1.addCard(c2)
         
         p2.addCard(c2)
-        
+        /*
         p1.capital.kingdomField.addCard(c1)
         p1.capital.kingdomField.addCard(c1)
         p1.capital.kingdomField.addCard(c2)
@@ -70,6 +70,7 @@ class InvasionGame {
         //p1.capital.battleField.addCard(c2)
         //p1.capital.battleField.addCard(c3)
         //p1.capital.battleField.addCard(c2)
+*/
     }
     
 }

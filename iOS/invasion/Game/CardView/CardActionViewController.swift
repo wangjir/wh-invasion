@@ -14,14 +14,14 @@ class CardActionViewController: UIViewController {
     @IBOutlet weak var useButton: UIButton!
     @IBOutlet weak var developmentButton: UIButton!
 
-    var cardViewController: CardViewController!
+    var cardView: CardView!
     var card: Card!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        cardViewController = CardViewController()
-        self.cardViewContainer.addSubview(cardViewController.view)
+        cardView = UIView.loadFromNibNamed("CardView") as! CardView
+        self.cardViewContainer.addSubview(cardView)
     }
     
     override func didReceiveMemoryWarning() {
@@ -30,14 +30,14 @@ class CardActionViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        cardViewController.setupCard(card)
+        cardView.frame = self.cardViewContainer.bounds
         super.viewWillAppear(animated)
     }
     
     func setupCard(card: Card) {
         self.card = card
         if (self.viewIfLoaded != nil) {
-            cardViewController.setupCard(card)
+            cardView.setupCard(card)
         }
     }
     
