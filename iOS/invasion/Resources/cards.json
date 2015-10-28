@@ -43,11 +43,12 @@
         "hp": 3,
         "skills": [
             {
-                "skill": "opponent sacrifice one unit",
+                "skill": "opponent sacrifice unit",
                 "mode": "positive",
                 "zone": "any",
                 "forced": 1,
-                "action_time": "unit_leave_play",
+                "quantity": 1,
+                "action_time": "self_leave_play",
                 "action_target_zone": "corresponding",
                 "description": "Forced: After this unit leaves play, each opponent must sacrifice a unit in this corresponding zone."
             }
@@ -99,11 +100,13 @@
         "hp": 3,
         "skills": [
             {
-                "skill": "self get power",
+                "skill": "add power",
                 "mode": "passive",
                 "zone": "Battlefield",
                 "quantity": 2,  
                 "action_requirement": ["2 developments"],
+                "action_duration": "forever",
+                "action_target": ["self"],
                 "description": "Battlefield. This unit gains two powers while you have at least two developments in this zone."
             }
         ]
@@ -127,13 +130,15 @@
         "hp": 1,
         "skills": [
             {
-                "skill": "target get power",
+                "skill": "add power",
                 "mode": "positive",
                 "zone": "Quest",
                 "cost": 2,
                 "quantity": 1,
                 "action_time": "any",
+                "action_target": ["unit"],
                 "action_target_zone": "any",
+                "action_duration": "turn",
                 "description": "Quest. Action: Spend 2 resources to have a target unit gain one power until the end of the turn."
             }
         ]
@@ -163,7 +168,13 @@
                 "description": "Limit one Hero per zone."
             },
             {
-                "skill": "gain 2 powers when one section is burning.",
+                "skill": "add power",
+                "mode": "passive",
+                "zone": "any",
+                "quantity": 2,  
+                "action_requirement": ["one burning zone"],
+                "action_duration": "forever",
+                "action_target": ["self"],
                 "description": "This unit gains two powers while one section of your capital is burning."
             }
         ]
@@ -188,15 +199,20 @@
         "skills": [
             {
                 "skill": "Limit one Hero per zone.",
+                "mode": "passive",
+                "zone": "any",
                 "description": "Limit one Hero per zone."
             },
             {
                 "skill": "Toughness",
                 "quantity": 2,
-                "short": "Toughness 2",
+                "mode": "passive",
+                "short": "Toughness 2"
             },
             {
-                "skill": "more 3 resources for target",
+                "skill": "more resources be target",
+                "mode": "passive",
+                "quantity": 3,
                 "description": "opponents cannot target this unit with card effects unless they pay an additional 3 resources per effect."
             }
         ]
@@ -220,9 +236,242 @@
         "hp": 2,
         "skills": [
             {
-                "skill": "search top 5 support card.",
+                "skill": "search support card",
+                "mode": "positive",
+                "zone": "any",
                 "forced": 1,
+                "action_time": "self_enter_play",
+                "action_target_zone": "corresponding",
                 "description": "Forced: After this unit enters play, search the top five cards of your deck for a support card with cost 2 or lower and put it into this zone, if able. Then shuffle your deck."
+            }
+        ]
+    },
+    
+    "cs_9": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_9.jpg",
+        "name": "Dwarf Masons",
+        "unit_type": ["Engineer"],
+        "cost": 3,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 3,
+        "skills": [
+            {
+                "skill": "add development",
+                "mode": "positive",
+                "zone": "any",
+                "forced": 1,
+                "quantity": 1,
+                "action_time": "self_enter_play",
+                "action_target_zone": "corresponding",
+                "description": "Forced: After this unit enters play, put the top of your deck facedown into this zone as a development." 
+            }
+        ]
+    },
+    
+    "cs_10": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_10.jpg",
+        "name": "Dwarf Ranger",
+        "unit_type": ["Ranger"],
+        "cost": 3,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 2,
+        "skills": [
+            {
+                "skill": "scout",
+                "mode": "positive",
+                "zone": "any",
+                "action_time": "alive after a combat",
+            },
+            {
+                "skill": "deal damage",
+                "mode": "positive",
+                "zone": "Quest",
+                "forced": 1,
+                "quantity": 1,
+                "action_time": "unit_leave_play",
+                "action_requirement": ["your other dwarf unit"],
+                "action_target_zone": "any",
+                "action_target": ["self", "unit", "capital"],
+                "description": "Forced: After one of your other Dwarf units leaves play, deal 1 damage to one target unit or capital." 
+            }
+        ]
+    },
+    
+    "cs_11": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_11.jpg",
+        "name": "Mountain Brigade",
+        "unit_type": ["Warrior"],
+        "cost": 4,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 2,
+        "hp": 6,
+        "skills": [
+        ]
+    },
+
+    "cs_12": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_12.jpg",
+        "name": "Ironbreakers of Ankhor",
+        "unit_type": ["Warrior", "Elite"],
+        "cost": 5,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 2,
+        "hp": 3,
+        "skills": [
+            {
+                "skill": "Toughness",
+                "quantity": 0,
+                "mode": "passive",
+                "zone": "any",
+                "dynamic_quantity": "developments in this zone.", 
+                "short": "Toughness X",
+                "description": "X is the number of development cards in this zone."
+            }
+        ]
+    },
+    
+    "cs_13": {
+        "set": "Core",
+        "type": "Support",
+        "unique": 0,
+        "image": "cs_13.jpg",
+        "name": "Rune of Fortitude",
+        "support_type": ["Rune"],
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "special",
+                "description": "Each unit attacking this zone loses one power unless its controller pays 1 resource per unit."
+            }
+        ]
+    },
+    
+    "cs_14": {
+        "set": "Core",
+        "type": "Support",
+        "unique": 0,
+        "image": "cs_14.jpg",
+        "name": "Keystone Forge",
+        "support_type": ["Building"],
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 1,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "heal",
+                "zone": "Kingdom",
+                "mode": "positive",
+                "forced": 1,
+                "quantity": 1,
+                "action_time": "your_turn_begin",
+                "action_target_zone": "your any",
+                "action_target": ["capital"],
+                "description": "Kingdom. Forced: After your turn begins, heal 1 damage to your capital"
+            }
+        ]
+    },
+    
+    "cs_15": {
+        "set": "Core",
+        "type": "Support",
+        "unique": 0,
+        "image": "cs_15.jpg",
+        "name": "Organ Gun",
+        "support_type": ["Attachment", "Weapon"],
+        "cost": 0,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "attachment",
+                "description": "Attach to a target unit."
+            },
+            {
+                "skill": "add power",
+                "mode": "passive",
+                "zone": "any",
+                "quantity": 2,
+                "action_requirement": ["defending"],
+                "action_target": ["attached"],
+                "description": "Attached unit gains 2 power while defending."
+            }
+        ]
+    },
+    
+    "cs_16": {
+        "set": "Core",
+        "type": "Support",
+        "unique": 1,
+        "image": "cs_16.jpg",
+        "name": "Master Rune of Dismay",
+        "support_type": ["Rune"],
+        "cost": 4,
+        "loyalty_need": {
+            "Dwarf": 3
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 2,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "special",
+                "description": "Kingdom. Opponent's units cost 1 additional resource to play."
             }
         ]
     },
