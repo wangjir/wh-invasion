@@ -560,5 +560,228 @@
             }
         ]
     },
+    
+    "cs_20": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_20.jpg",
+        "name": "Stubborn Refusal",
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "move damage",
+                "mode": "positive",
+                "zone": "any",
+                "dynamic_quantity": "all damage", 
+                "action_time": "any", 
+                "action_source": ["unit"],
+                "action_target_zone": "corresponding",
+                "action_target": ["unit"],
+                "description": "Action: Move all damage from one target unit to another target unit in any player's corresponding zone."
+            }
+        ]
+    },
+    
+    "cs_21": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_21.jpg",
+        "name": "Striking the Grudge",
+        "cost": 1,
+        "loyalty_need": {
+            "Dwarf": 3
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "add power",
+                "mode": "positive",
+                "zone": "any",
+                "quantity": 2,
+                "action_time": "any", 
+                "action_duration" "turn",
+                "action_requirement": ["defending", "attacking"],
+                "action_target": ["unit"],
+                "description": "Action: One target attacking or defending unit gains two powers until the end of the turn."
+            }
+        ]
+    },
+    
+    "cs_22": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_22.jpg",
+        "name": "Grudge Thrower Assault",
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 3
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "special",
+                "mode": "positive",
+                "action_time": "combat_damage_assigned",
+                "action_target": ["one_attacking_unit"],
+                "description": "Play during combat, after damage has been assigned. Action: Destroy one target attacking unit."
+            }
+        ]
+    },
+    
+    "cs_23": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_23.jpg",
+        "name": "Demolition!",
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "destroy",
+                "mode": "positive",
+                "quantity": 1,
+                "action_time": "any",
+                "action_target": ["support", "development"],
+                "description": "Destory one target support card or development."
+            }
+        ]
+    },
+    
+    "cs_24": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_24.jpg",
+        "name": "Wake the Mountain",
+        "cost": 3,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "add development",
+                "mode": "positive",
+                "quantity": 3,
+                "action_time": "any",
+                "action_target_zone": ["Kingdom", "Battlefield"],
+                "description": "Action: Put the top three crads of your deck into your Battlefield or Kingdom, facedown as development."
+            }
+        ]
+    },
+    
+    "cs_25": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_25.jpg",
+        "name": "Master Rune of Valaya",
+        "cost": 2,
+        "loyalty_need": {
+            "Dwarf": 1
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "cancel damage, special",
+                "mode": "positive",
+                "action_time": "any",
+                "action_duration": "turn",
+                "description": "Action: Cancel all damage assigned during the Battlefield phase this turn."
+            }
+        ]
+    },
 
+
+
+
+    "cs_56": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_56.jpg",
+        "name": "Crooked Teef Goblins",
+        "unit_type": ["Goblin", "Warrior"],
+        "cost": 1,
+        "loyalty_need": {
+            "Orc": 1
+        },
+        "loyalty_produce": {
+            "Orc": 1
+        },
+        "power": 1,
+        "hp": 1,
+        "skills": [
+            {
+                "skill": "zone only",
+                "zone": "Battlefield",
+                "mode": "passive",
+                "description": "Battlefield only"
+            }
+        ]
+    },
+    
+    "cs_57": {
+        "set": "Core",
+        "type": "Unit",
+        "unique": 0,
+        "image": "cs_57.jpg",
+        "name": "Squig Herders",
+        "unit_type": ["Goblin", "Warrior"],
+        "cost": 2,
+        "loyalty_need": {
+            "Orc": 1
+        },
+        "loyalty_produce": {
+            "Orc": 1
+        },
+        "power": 1,
+        "hp": 2,
+        "skills": [
+            {
+                "skill": "add power",
+                "mode": "passive",
+                "quantity": 1,
+                "action_requirement": ["has one damaged unit"],
+                "action_duration": "forever",
+                "action_target": ["self"],
+                "description": "Squig Herders gains one power while you control at least one damaged unit."
+            }
+        ]
+    },
 }
