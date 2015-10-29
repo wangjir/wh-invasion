@@ -412,7 +412,7 @@
                 "forced": 1,
                 "quantity": 1,
                 "action_time": "your_turn_begin",
-                "action_target_zone": "your any",
+                "action_target_zone": "your_any",
                 "action_target": ["capital"],
                 "description": "Kingdom. Forced: After your turn begins, heal 1 damage to your capital"
             }
@@ -472,6 +472,91 @@
             {
                 "skill": "special",
                 "description": "Kingdom. Opponent's units cost 1 additional resource to play."
+            }
+        ]
+    },
+    
+    "cs_17": {
+        "set": "Core",
+        "type": "Quest",
+        "unique": 1,
+        "image": "cs_17.jpg",
+        "name": "A Glorious Death",
+        "cost": 0,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "special quest",
+                "description": "Action: sacrifice the unit on this quest to destroy up to two target attacking units. Use this ability only if A Glorious Death has 3 or more resources tokens on it."
+            },
+            {
+                "skill": "questing",
+            }
+        ]
+    },
+
+    "cs_18": {
+        "set": "Core",
+        "type": "Support",
+        "unique": 0,
+        "image": "cs_18.jpg",
+        "name": "Grudge Thrower",
+        "support_type": ["Siege"],
+        "cost": 1,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "add power",
+                "mode": "positive",
+                "zone": "Battlefield",
+                "quantity": 1,
+                "cost": 1,
+                "action_requirement": ["sacrifice one unit"],
+                "action_duration": "turn",
+                "action_target": ["all_attacking_unit", "all_defending_unit"],
+                "action_target_zone": ["your_Battlefield"], 
+                "action_time": "any", 
+                "description": "Battlefield. Action: Spend 1 resource and sacrifice a unit to have each attacking or defending unit gain one power until the end of the turn."
+            }
+        ]
+    },
+    
+    "cs_19": {
+        "set": "Core",
+        "type": "Tactic",
+        "unique": 0,
+        "image": "cs_19.jpg",
+        "name": "Burying the Grudge",
+        "cost": 0,
+        "loyalty_need": {
+            "Dwarf": 2
+        },
+        "loyalty_produce": {
+            "Dwarf": 1
+        },
+        "power": 0,
+        "hp": 0,
+        "skills": [
+            {
+                "skill": "add resource, special 1",
+                "mode": "positive",
+                "quantity": 1,
+                "action_time": "any", 
+                "description": "Action: Gain 1 resource of each unit that entered a discard pile this turn."
             }
         ]
     },

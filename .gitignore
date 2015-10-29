@@ -1,0 +1,93 @@
+# Git merge file
+#####################
+*.orig
+
+server/.idea/
+
+# Compiled python file
+#####################
+*.pyc
+
+# PIL generated file
+#####################
+*.pkl
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Tags #
+########
+tags
+
+# Backup file #
+###############
+*.bak
+
+# Excel file under script
+emma/script/*.xls
+
+# Vim Temp files #
+##################
+.*.sw*
+.sw*
+*.un~
+
+# ipython notebook
+*.ipynb
+
+# PyCharm #
+###########
+server/emma/.idea/*
+server/.idea/
+
+# Xcode generated files #
+#########################
+DerivedData
+*.xcuserstate
+xcuserdata
+xcuserdata/*
+emma/ios/emma/build/*
+
+# local config
+#######################
+server/emma/conf/local.py
+server/emma/conf/local_pre.py
+server/emma/conf/bank.py
+server/emma/conf/logger_local.yaml
+
+ConfigLocal.h
+
+server/emma/www/static/uploaded/
+server/emma/www/built/
+
+server/emma/forum/uploads/userpics
+server/emma/forum/cache
+server/emma/forum/err.log
+server/emma/forum/cache
+server/emma/forum/conf/config.php
+.sass-cache
+.git
+
+# android 
+###########################
+android.iml
+
+# Node modules
+node_modules
+
+# CocoaPod
+Pods/
+LocalPodfile.rb
+
+server/emma/build
+server/emma/www/webviews/human-api/npm-debug.log
+server/doc/build/
+
+iemma.sh
+ios/emma.xcworkspace/
+ios/Rollout-ios-SDK/.structures/archive
